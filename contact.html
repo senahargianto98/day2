@@ -1,71 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="./assets/css/contact.css" />
-    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <script src="./js/form.js"></script>
   </head>
+
   <body>
-    <!-- Navbar -->
     <nav>
       <div class="nav-kiri">
-        <img src="./assets/img/logo.png" alt="Logo" />
+        <img src="./img/logo.png" alt="Logo" />
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">My Project</a>
+            <a href="#">Blog</a>
           </li>
         </ul>
       </div>
+
       <div class="nav-kanan">
-        <a href="#">Contact Me</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
-    <!-- Navbar -->
-    <div class="container">
-      <section>
-        <div class="box1">
-          <form action="">
-            <h1 class="text-header">Get In Touch</h1>
 
-            <div class="input-group">
-              <label for="input-name" class="label">Name</label>
-              <input type="text" id="input-name" class="input" />
-            </div>
-            <div class="input-group">
-              <label for="input-email" class="label">Email</label>
-              <input type="email" id="input-email" class="input" />
-            </div>
-            <div class="input-group">
-              <label for="input-phone" class="label">Phone Number</label>
-              <input type="number" id="input-phone" class="input" />
-            </div>
-            <div class="input-group">
-              <label for="input-subject" class="label">Subject</label>
-              <select name="" id="input-subject" class="input">
-                <option value="">Lets Talk</option>
-                <option value="">Lets Collaboration</option>
-                <option value="">I am Hiring</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label for="input-subject" class="label">Your Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                class="input"
-              ></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="box2">
-          <button class="button">Submit</button>
-        </div>
-      </section>
-    </div>
+    <form style="width: 400px; margin: 50px auto">
+      <h2 class="text-center">Hi Welcome to my hut</h2>
+
+      <div>
+        <label class="label" for="input-name">Name</label>
+        <input class="input" type="text" id="input-name" />
+      </div>
+
+      <div style="margin-top: 15px">
+        <label for="input-email" class="label">Email</label>
+        <input type="email" id="input-email" class="input" />
+      </div>
+
+      <div style="margin-top: 15px">
+        <label for="input-phone" class="label">Phone Number</label>
+        <input type="number" id="input-phone" class="input" />
+      </div>
+
+      <div style="margin-top: 15px">
+        <label for="input-subject" class="label">Subject</label>
+        <select id="input-subject" class="input">
+          <option value="" hidden>Select Here</option>
+          <option value="Let's Talk">Let's Talk</option>
+          <option value="Let's Collaboration">Let's Collaboration</option>
+          <option value="I am Hirin">I am Hiring</option>
+        </select>
+      </div>
+
+      <div style="margin-top: 15px">
+        <label for="input-message" class="label">Your Message</label>
+        <textarea id="input-message" class="input-email"></textarea>
+      </div>
+      <div class="box">
+        <button class="button" onclick="submitdata()" type="button">
+          Submit
+        </button>
+      </div>
+    </form>
   </body>
 </html>
